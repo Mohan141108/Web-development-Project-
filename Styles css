@@ -1,0 +1,57 @@
+<!DOCTYPE html>Add commentMore actions
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NMK Cafe - Coffee Order</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <header>
+        <h1>☕ NMK Cafe</h1>
+        <p>Order your favorite coffee!</p>
+    </header>
+
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+            <div class="menu-container">
+                <div class="menu-item">
+                    <h3>Espresso</h3>
+                    <p>₹100</p>
+                    <button onclick="addToCart('Espresso', 100)">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <h3>Cappuccino</h3>
+                    <p>₹120</p>
+                    <button onclick="addToCart('Cappuccino', 120)">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <h3>Americano</h3>
+                    <p>₹110</p>
+                    <button onclick="addToCart('Americano', 110)">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <h3>Latte</h3>
+                    <p>₹130</p>
+                    <button onclick="addToCart('Latte', 130)">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <h3>Cold Brew</h3>
+                    <p>₹140</p>
+                    <button onclick="addToCart('Cold Brew', 140)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p class="total">Total: ₹<span id="total-price">0</span></p>
+            <button class="checkout-btn" onclick="checkout()">Checkout</button>
+        </section>
+    </main>
+
+    <script src="order.js"></script>
+</body>
+</html>
